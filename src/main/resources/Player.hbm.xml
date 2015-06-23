@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Jun, 2015 6:24:15 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.Player" table="PLAYER">
+        <id name="pid" type="long">
+            <column name="PID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String"> 
+        
+            <column name="NAME" />
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE" />
+        </property>
+        <property name="tid" type="long">
+            <column name="TID" />
+        </property>
+    </class>
+</hibernate-mapping>
